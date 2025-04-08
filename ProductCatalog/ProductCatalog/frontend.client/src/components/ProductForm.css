@@ -1,0 +1,74 @@
+.split-screen {
+    display: flex;
+    min-height: 100vh;
+}
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.product-form {
+    flex: 1;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-right: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+}
+
+.product-form h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.product-form input,
+.product-form input[type="file"],
+.product-form button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.product-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.product-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-form button:hover {
+    background-color: #0056b3;
+}
+
+.preview {
+    flex: 1;
+    padding: 2rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.preview img {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+.preview h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}

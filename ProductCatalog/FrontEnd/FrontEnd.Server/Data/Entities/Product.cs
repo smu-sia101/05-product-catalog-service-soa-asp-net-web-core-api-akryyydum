@@ -5,10 +5,9 @@ namespace ProductCatalog.Data.Entities
 {
     public class Product
     {
-        [BsonId] // tells MongoDB this is the _id field
-        [BsonRepresentation(BsonType.ObjectId)] // allows passing it as a string
-        public string Id { get; set; } = ObjectId.GenerateNewId().ToString();
-
+        [BsonId]
+        [BsonElement("id"),BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
 
         [BsonElement("name"), BsonRepresentation(BsonType.String)]
         public string Name { get; set; }
@@ -25,7 +24,7 @@ namespace ProductCatalog.Data.Entities
         [BsonElement("stock"), BsonRepresentation(BsonType.Int32)]
         public int Stock { get; set; }
 
-        [BsonElement("image")]
+        [BsonElement("image"), BsonRepresentation(BsonType.String)]
         public string ImageUrl { get; set; }
     }
 }
