@@ -1,0 +1,33 @@
+.product-list-wrapper {
+    max-height: 500px;
+    width: 500px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.product-card img {
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    margin: 0 0 8px;
+}
+
+.product-card p {
+    margin: 4px 0;
+}
+
+.product-card button {
+    margin-right: 10px;
+}
